@@ -1,0 +1,41 @@
+{
+  "plugins": [
+    "./build.plugin.js",
+    ["build-plugin-antd", {
+      "themeConfig": {
+        "brand-primary": "#1DA57A"
+      },
+      "importOptions": {
+        "libraryName": "antd-mobile",
+        "libraryDirectory": "es",
+        "style": true
+      }
+    }]
+  ],
+  "proxy": {
+    "/file": {
+      "enable": true,
+      "target": "http://localhost:3200"
+    },
+    "/api": {
+      "enable": true,
+      "target": "http://localhost:3200"
+    },
+    "/webapi": {
+      "enable": true,
+      "target": "http://localhost:3200"
+    },
+    "/test": {
+      "enable": true,
+      "target": "http://localhost:3200"
+    }
+  },
+  "alias": {
+    "@utils": "./src/utils/",
+    "@components": "./src/components/",
+    "@src": "./src/"
+  },
+  "router": {
+    "configPath": "src/routes.js"
+  }
+}

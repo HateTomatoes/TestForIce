@@ -1,0 +1,59 @@
+body {
+  user-select: none;
+  -webkit-text-size-adjust: none;
+  /*-webkit-tap-highlight-color:transparent;*/
+  touch-action: manipulation;
+  font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+
+img{
+  pointer-events:none;
+}
+
+.router-wrapper {
+  overflow: hidden;
+}
+
+.forward-enter {
+  opacity: 0;
+  transform: translateX(80%);
+}
+
+.forward-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 400ms;
+}
+
+.forward-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.forward-exit-active {
+  opacity: 0;
+  transform: translateX(-80%);
+  transition: all 400ms;
+}
+
+.back-enter {
+  opacity: 0;
+  transform: translateX(-80%);
+}
+
+.back-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 400ms;
+}
+
+.back-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.back-exit-active {
+  opacity: 0;
+  transform: translate(80%);
+  transition: all 400ms;
+}

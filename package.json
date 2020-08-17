@@ -1,0 +1,68 @@
+{
+  "name": "@icedesign/pro-scaffold",
+  "version": "1.5.2",
+  "description": "升级飞冰3.0框架，使用Icejs构筑项目，UI框架使用antd-mobile，集成按需加载",
+  "files": [
+    "src/",
+    "build/",
+    "public/",
+    "tests/",
+    "_gitignore",
+    ".editorconfig",
+    ".eslintignore",
+    ".eslintrc"
+  ],
+  "dependencies": {
+    "animate.css": "^4.1.0",
+    "antd-mobile": "^2.3.3",
+    "axios": "^0.17.1",
+    "classnames": "^2.2.5",
+    "crypto-js": "^3.1.9-1",
+    "enquire-js": "^0.1.2",
+    "events": "^3.0.0",
+    "hoist-non-react-statics": "^2.5.5",
+    "invariant": "^2.2.4",
+    "js-cookie": "^2.2.1",
+    "jsencrypt": "^3.0.0-rc.1",
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0",
+    "path-to-regexp": "^2.2.1",
+    "prop-types": "^15.5.8",
+    "qs": "^6.6.0",
+    "react": "^16.8.2",
+    "react-cookie": "^4.0.1",
+    "react-dom": "^16.8.2",
+    "react-helmet": "^5.2.0",
+    "react-hot-loader": "^4.7.1",
+    "react-router-dom": "^4.3.1",
+    "react-transition-group": "^4.3.0",
+    "reconnecting-websocket": "^4.2.0",
+    "vconsole": "^3.3.2"
+  },
+  "devDependencies": {
+    "build-plugin-antd": "^0.1.0",
+    "cross-env": "^5.2.0",
+    "ice.js": "^1.3.7",
+    "node-sass": "^4.12.0"
+  },
+  "scripts": {
+    "start": "icejs start --port=6678 --mode debug",
+    "build": "icejs build",
+    "lint": "eslint . --ext '.js,.jsx' --fix"
+  },
+  "scaffoldConfig": {
+    "builder": "ice-scripts",
+    "name": "ice-design-pro",
+    "title": "ICE Design Pro",
+    "categories": [
+      "基础模板"
+    ],
+    "screenshot": "https://img.alicdn.com/tfs/TB1xYm7w9zqK1RjSZPcXXbTepXa-2872-1580.png",
+    "defaultLayout": "BasicLayout"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "title": "智能柜子-无屏售卖",
+  "templateType": "koa2"
+}
